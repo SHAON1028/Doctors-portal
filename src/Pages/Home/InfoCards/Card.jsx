@@ -4,7 +4,7 @@ const Card = ({card}) => {
     const{name,description,icon,bgClass} = card
     return (
         <div>
-<div className={`card  ${bgClass} shadow-xl text-white p-6`}>
+<div className={`card text-white p-6 md:card-side shadow-xl ${bgClass}`}>
   <figure><img src={icon} alt="Movie"/></figure>
   <div className="card-body">
     <h2 className="card-title">{name}</h2>
